@@ -22,6 +22,7 @@ This website was developed for *Instituto Howard*, a private school in Mexico of
 
 ## 📁 Project Structure
 
+```
 /Howard
 │
 ├── img/
@@ -46,6 +47,7 @@ This website was developed for *Instituto Howard*, a private school in Mexico of
 ├── high-school.html
 └── contacto.html
 
+```
 
 ## 🛠 Design & Architecture Decisions
 
@@ -63,8 +65,3 @@ This project builds on experience gained in previous work (e.g., the EspressoCen
 - Code organization
 - Asset management
 - Scalability
-
-
-
-
-
