@@ -1,0 +1,576 @@
+/*HEADER START*/
+
+@import url("variables.css");
+
+html {
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  font-family: var(--font-amaranth-regular);
+  background-image: url("../img/toefl/fondo3.png");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.header {
+  background-color: var(--azul-oscuro);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.header h1 {
+  margin-left: 2rem;
+  font-family: var(--font-amaranth-bold);
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+}
+
+.main-nav {
+  margin-right: 2.5rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-nav ul.menu > li > a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--blanco);
+  background: var(--azul-oscuro);
+}
+
+.main-nav ul.menu > li > a:hover {
+  background: var(--azul-medio);
+}
+
+.main-nav ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--azul-oscuro);
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.main-nav ul.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.main-nav ul.menu li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.main-nav ul.dropdown-menu li a:hover {
+  background: var(--azul-medio);
+}
+
+/* HEADER END */
+
+.toefl {
+  height: 400px;
+  background-repeat: no-repeat; /* don't tile it */
+  background-size: cover; /* make it fill the container */
+  background-position: center;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.toefl-titulo {
+  height: 80px;
+  margin-bottom: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toefl-doodle {
+  position: absolute;
+  width: 20%;
+}
+
+.doodle-left {
+  left: 5%;
+}
+
+.doodle-right {
+  left: 75%;
+}
+
+.toefl p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--azul-oscuro);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.niveles {
+  display: flex;
+  width: 100%;
+}
+
+.niveles-card {
+  position: relative;
+  background-color: #f2f28f; /* or your yellow */
+  padding-top: 100px; /* space for the image */
+  text-align: center;
+  width: 33.3%;
+  border: 3px solid var(--azul-medio);
+}
+
+.niveles-card img {
+  position: absolute;
+  top: -60px; /* adjust how far it overflows */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px; /* or whatever size */
+  height: 140px;
+  border-radius: 50%; /* circle */
+  object-fit: cover; /* ensure it stays neat */
+  border: 3px solid var(--azul-medio); /* optional border */
+}
+
+.niveles-card-texto {
+  padding: 0.5rem 1rem;
+  color: var(--azul-oscuro);
+}
+
+.niveles-card-texto h4 {
+  min-height: 50px;
+  font-family: var(--font-amaranth-bold);
+}
+
+.niveles-card-texto p {
+  font-size: 1.2rem;
+}
+
+.oferta {
+  display: flex;
+  padding: 0rem 0rem 3rem 0rem;
+  gap: 4rem;
+}
+
+.oferta-img {
+  width: 40%;
+}
+
+.oferta-img img {
+  width: 90%;
+}
+
+.oferta-informacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oferta-informacion h1 {
+  font-size: 3rem;
+  color: var(--azul-oscuro);
+}
+
+.oferta-informacion span {
+  color: var(--amarillo);
+}
+
+.oferta-informacion li {
+  font-size: 1.5rem;
+  color: var(--azul-oscuro);
+  margin: 0.5rem;
+}
+
+.oferta-informacion button {
+  background-color: var(--verde);
+  color: var(--blanco);
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+}
+
+/*FOOTER START */
+
+footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  display: flex;
+  align-items: center;
+  height: 140px;
+}
+
+.section-1 {
+  margin-left: 3rem;
+  width: 35%;
+}
+
+.section-1 h1,
+h4 {
+  margin: 0;
+  font-family: var(--font-amaranth-bold);
+}
+
+.footer-main {
+  display: flex;
+  gap: 9rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.section-2 {
+  min-height: 90px;
+}
+
+.section-2 a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+.section-2 svg {
+  width: 20px;
+  height: 20px;
+  margin: 1rem 5px;
+}
+
+.section-2 a:hover {
+  color: var(--azul-pastel);
+}
+
+.social {
+  margin-right: 4rem;
+}
+
+.social .footer-links {
+  flex-direction: row;
+}
+
+/*FOOTER END */
+
+@media (max-width: 1200px) {
+  .toefl-titulo {
+    height: 70px;
+  }
+
+  .toefl p {
+    top: 40%;
+  }
+
+  .niveles-card-texto p {
+    font-size: 1rem;
+  }
+
+  .oferta {
+    gap: 0.5rem;
+  }
+
+  .oferta-informacion li {
+    font-size: 1.4rem;
+  }
+
+  .oferta-informacion button {
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .toefl {
+    height: 325px;
+  }
+  .toefl-titulo {
+    height: 50px;
+  }
+
+  .toefl p {
+    top: 40%;
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  .niveles-card-texto p {
+    font-size: 0.8rem;
+  }
+
+  .oferta-informacion h1 {
+    font-size: 2rem;
+  }
+
+  .oferta-informacion li {
+    font-size: 1.1rem;
+  }
+
+  .oferta-informacion button {
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+
+  /* FOOTER START */
+
+  .footer-main {
+    gap: 3rem;
+  }
+
+  /* FOOTER END */
+}
+
+@media (max-width: 780px) {
+  /* HEADER START */
+
+  .main-nav {
+    margin-right: 1rem;
+  }
+
+  /* HEADER END */
+
+  /* FOOTER START */
+
+  footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+    height: 140px;
+  }
+
+  .section-1 {
+    margin-left: 3rem;
+    width: 30%;
+  }
+
+  .section-1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .footer-main {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .section-2 {
+    min-height: 90px;
+  }
+
+  .section-2 a {
+    text-decoration: none;
+    color: var(--blanco);
+  }
+
+  .section-2 svg {
+    width: 20px;
+    height: 20px;
+    margin: 1rem 5px;
+  }
+
+  .section-2 a:hover {
+    color: var(--azul-pastel);
+  }
+
+  .social {
+    margin-right: 4rem;
+  }
+
+  /* FOOTER END */
+}
+
+@media (max-width: 480px) {
+  /* HEADER START */
+
+  .header h1 {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  .menu a {
+    font-size: 0.6rem;
+  }
+
+  .main-nav {
+    margin-right: 0.3rem;
+  }
+
+  .main-nav ul.menu > li > a {
+    padding: 10px 10px;
+  }
+
+  /* HEADER END */
+
+  .toefl {
+    height: 230px;
+  }
+
+  .toefl-titulo {
+    height: 30px;
+  }
+
+  .toefl p {
+    top: 40%;
+    font-size: 0.6rem;
+  }
+
+  .niveles-card {
+    padding-top: 15px;
+    border: 2px solid var(--azul-oscuro);
+    padding: 0rem 0.5rem;
+  }
+
+  .niveles-card img {
+    width: 70px;
+    height: 70px;
+    top: -45px;
+  }
+
+  .niveles-card-texto {
+    padding: 2rem 0.2rem 0rem 0.2rem;
+  }
+
+  .niveles-card-texto h4 {
+    font-size: 0.7rem;
+    min-height: 20px;
+  }
+
+  .niveles-card-texto p {
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  .oferta {
+    margin-top: 1.5rem;
+    gap: 0;
+  }
+
+  .oferta-img {
+    width: 50%;
+  }
+
+  .oferta-img img {
+    width: 100%;
+  }
+
+  .oferta-informacion-bullets {
+    padding-left: 1rem;
+    margin-bottom: 0.1rem;
+  }
+
+  .oferta-informacion h1 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .oferta-informacion li {
+    font-size: 0.7rem;
+  }
+
+  .oferta-informacion button {
+    font-size: 0.6rem;
+    margin-top: 0rem;
+  }
+
+  /* FOOTER START */
+
+  footer {
+    height: 80px;
+  }
+
+  .section-1 {
+    margin-left: 1rem;
+  }
+
+  .section-1 h1 {
+    font-size: 0.9rem;
+  }
+
+  .section-1 p {
+    font-size: 0.8rem;
+  }
+
+  .section-2 h4 {
+    font-size: 0.7rem;
+  }
+
+  .footer-main {
+    margin-left: 2.5rem;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .section-2 {
+    min-height: 70px;
+  }
+
+  .section-2 a {
+    font-size: 0.5rem;
+  }
+
+  .section-2 svg {
+    margin: 0.2rem 0.2rem;
+    width: 10px;
+    height: 10px;
+  }
+
+  .social {
+    margin-right: 0rem;
+  }
+
+  /* FOOTER END */
+}

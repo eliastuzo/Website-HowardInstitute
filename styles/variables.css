@@ -1,0 +1,39 @@
+:root {
+  /*COLORES*/
+  --azul-medio: #235982;
+  --azul-oscuro: #1e4366;
+  --azul-claro: #81b3d7;
+  --azul-muy-claro: #dcf3ff;
+  --amarillo: #f9b60d;
+  --azul-pastel: #a9dcfc;
+  --rojo: #d9403b;
+  --verde: #babc33;
+  --blanco: #ffffff;
+  --amarillo-pastel: #f8d372;
+
+  /* Amaranth */
+  --font-amaranth-regular: "Amaranth Regular";
+  --font-amaranth-bold: "Amaranth Bold";
+  --font-amaranth-italic: "Amaranth Italic";
+  --font-amaranth-bold-italic: "Amaranth Bold Italic";
+}
+
+/*FONTS*/
+
+/*AMARATH*/
+@font-face {
+  font-family: "Amaranth Regular";
+  src: url("./fonts/Amaranth/Amaranth-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Amaranth Bold";
+  src: url("./fonts/Amaranth/Amaranth-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Amaranth Italic";
+  src: url("./fonts/Amaranth/Amaranth-Italic.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Amaranth Bold Italic";
+  src: url("./fonts/Amaranth/Amaranth-BoldItalic.ttf") format("opentype");
+}
